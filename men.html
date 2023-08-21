@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body style="background-color: gray;">
+        <header>
+            <div class="sticky-nav">
+                <span>
+                    <a href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1920px-Logo_NIKE.svg.png" alt="Nike Logo" style="height: 50px;">
+                    </a>
+                </span>
+                <span class="nav-categories">
+                    <a href="men.html">
+                    <button style="background-color: white; margin-right: 25px; border: None; font-weight: bold; font-size: 15px;">
+                        Men
+                    </button>
+                    </a>
+                    <a href="women.html">
+                    <button style="background-color: white; margin-right: 25px; border: None; font-weight: bold; font-size: 15px;">
+                        Women
+                    </button>
+                    </a>
+                    <a href="kids.html">
+                    <button style="background-color: white; border: None; font-weight: bold; font-size: 15px;">
+                        Kids
+                    </button>
+                    </a>
+                </span>
+                <span style="position: fixed; left: 93%; top: 35px">
+                    <img src="https://cdn0.iconfinder.com/data/icons/ecommerce2-line/64/E-Commerce_2_-_Line-06-512.png" style="height: 50px;">
+                <!--
+                    When someone clicks the add cart button increment the bag + !
+                -->
+                </span>
+                <span class="cart-count" id="bag-count">
+                    0
+                </span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div style="display: flex;">
+                <span>
+                    <img src="images/blueshoe.webp" style="height: 300px; margin-top: 200px; margin-left: 50px;">
+                    <div class="image-details">
+                        <figcaption>Air Jordan 1 High G</figcaption>
+                        <figcaption>Men's Golf Shoes</figcaption>
+                        <figcaption>3 Colors</figcaption>
+                        <figcaption>$180</figcaption>
+                    </div>
+                    <!--
+                        Air Jordan 1 High G
+                        Men's Golf Shoes
+                        3 Colors
+                        $180
+                    -->
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                        <span>
+                            <button class="add-cart-button" id="add-cart" onclick="increment()" onclick="bagSuccess()">
+                                Add To Cart
+                                <!--
+                                    Sorry this feature is currently a work in progress
+                                --> 
+                            </button>
+                        </span>
+                        <span>
+                            <button class="purchase-now-button" onclick="purchase()">
+                                Purchase Now
+                            </button>
+                            <div class="modal myModal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Something went wrong. Please try again!</p>
+                                    <p>a.k.a. Coming Soon!</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </span>
+                <span>
+                    <img src="images/bag.webp" style="height: 300px; margin-top: 200px; margin-left: 50px;">
+                    <div class="image-details">
+                        <figcaption>Nike Utility Bag</figcaption>
+                        <figcaption>Training Backpack (27L)</figcaption>
+                        <figcaption>2 Colors</figcaption>
+                        <figcaption>$39</figcaption>
+                    </div>
+                    <!--
+                        Nike Utility Bag
+                        Training Backpack (27L)
+                        2 Colors
+                        $39
+                    -->
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                        <span>
+                            <button class="add-cart-button" id="add-cart" onclick="increment()">
+                                Add To Cart
+                                <!--
+                                    Sorry this feature is currently a work in progress
+                                --> 
+                            </button>
+                        </span>
+                        <span>
+                            <button class="purchase-now-button" onclick="purchae()">
+                                Purchase Now
+                            </button>
+                            <div class="modal myModal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Something went wrong. Please try again!</p>
+                                    <p>a.k.a. Coming Soon!</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </span>
+                <span>
+                    <img src="images/buckethat.webp" style="height: 300px; margin-top: 200px; margin-left: 50px;">
+                    <div class="image-details">
+                        <figcaption>Nike Sportswear</figcaption>
+                        <figcaption>Bucket Hat</figcaption>
+                        <figcaption>4 Colors</figcaption>
+                        <figcaption>$27</figcaption>
+                    </div>
+                    <!--
+                        Nike Sportswear
+                        Bucket Hat
+                        4 Colors
+                        $27
+                    -->
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                        <span>
+                            <button class="add-cart-button" id="add-cart" onclick="increment()">
+                                Add To Cart
+                                <!--
+                                    Sorry this feature is currently a work in progress
+                                --> 
+                            </button>
+                        </span>
+                        <span>
+                            <button class="purchase-now-button" onclick="purchase()">
+                                Purchase Now
+                            </button>
+                            <div class="modal myModal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Something went wrong. Please try again!</p>
+                                    <p>a.k.a. Coming Soon!</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </span>
+                <span>
+                    <img src="images/invicivle3.jpg" style="height: 300px; margin-top: 200px; margin-left: 50px;">
+                    <div class="image-details">
+                        <figcaption>Nike Invicible 3</figcaption>
+                        <figcaption>Men's Road Running Shoes</figcaption>
+                        <figcaption>4 Colors</figcaption>
+                        <figcaption>$190</figcaption>
+                    </div>
+                    <!--
+                        Nike Invicible 3
+                        Men's Road Running Shoes
+                        4 Colors
+                        $190
+                    -->
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                        <span>
+                            <button class="add-cart-button" id="add-cart" onclick="increment()">
+                                Add To Cart
+                                <!--
+                                    Sorry this feature is currently a work in progress
+                                --> 
+                            </button>
+                        </span>
+                        <span>
+                            <button class="purchase-now-button" onclick="purchase()">
+                                Purchase Now
+                            </button>
+                            <div class="modal myModal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Something went wrong. Please try again!</p>
+                                    <p>a.k.a. Coming Soon!</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </span>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

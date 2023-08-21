@@ -1,0 +1,107 @@
+
+body {
+    font-family: 'Nike Script', sans-serif;
+}
+
+header {
+    font-family: 'Nike Script', sans-serif;
+}
+
+.sticky-nav {
+    position: fixed;
+    background-color: white;
+    padding: 25px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+}
+
+.nav-categories {
+    display: flex;
+    justify-content: center;
+}
+
+.image-details {
+    margin-top: 20px;
+    margin-left: 50px;
+    color: white;
+}
+
+.add-cart-button {
+    background-color: black;
+    color: white;
+    border: None;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: fixed;
+    left: 93%;
+    top: 10%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+.purchase-now-button {
+    border: None;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Nike Script';
+    src: url('path/to/font/NikeScript-Regular.ttf');
+}
+
+.shop-button {
+    background-color: black;
+    color: white;
+    border: None;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
